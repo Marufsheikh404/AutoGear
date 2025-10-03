@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoGear</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="border-t-2 border-red-600">
+        <!-- Navber-1 -->
+        <section class="container mx-auto px-5">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-1">
+                    <p class="text-sm text-gray-500">Limited-Time Offers : Mid-Summer Season Sale On Selected Items </p>
+                    <a href="#"><button class="text-sm text-gray-500 font-bold">-SHOP NOW</button></a>
+                </div>
+
+                <div class="flex items-center  gap-2">
+                    <p class="text-sm text-gray-500">Help Center</p>
+                    <p class="text-sm text-gray-500">Order Tracking</p>
+                    <p><select class="select  w-20 border-none">
+                            <option disabled selected class="text-sm text-gray-500">Language</option>
+                            <option class="text-sm text-gray-500">English</option>
+                            <option class="text-sm text-gray-500">Spain</option>
+                            <option class="text-sm text-gray-500">Franch</option>
+                        </select></p>
+                    <p><select class="select  w-20 border-none">
+                            <option disabled selected>$USD</option>
+                            <option class="text-sm text-gray-500">€EURO</option>
+                            <option class="text-sm text-gray-500">$USD</option>
+                        </select></p>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Navber-2 -->
+        <section class="container mx-auto px-5">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <img class="w-35" src="Assets/imgi_7_logo-1753509866.png" alt="">
+                </div>
+                <div class="flex gap-2">
+                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img alt="Tailwind CSS Navbar component"
+                                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                            </div>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Navber-3 -->
+        <section class="container mx-auto px-5">
+            <div class="navbar bg-base-100 gap-3 shadow-sm mb-2">
+                <div class="navbar-start bg-[#EF233C] w-5% rounded-lg">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        </ul>
+                    </div>
+                    <h2 class="text-white text-sm font-semibold">Shop By Categories</h2>
+                </div>
+
+                <div class="navbar-center gap-3">
+                    <a href="index.html"
+                        class="text-sm focus:text-[#EF233C] transition-colors duration-300 ease-in-out hover:text-[#EF233C]">Home</a>
+
+                    <a href="shop.html"
+                        class="text-sm focus:text-[#EF233C] transition-colors duration-300 ease-in-out hover:text-[#EF233C]">Shop</a>
+
+                    <a href="categories.html"
+                        class="text-sm focus:text-[#EF233C] transition-colors duration-300 ease-in-out hover:text-[#EF233C]">Categories</a>
+
+                    <a href="#"
+                        class="text-sm focus:text-[#EF233C] transition-colors duration-300 ease-in-out hover:text-[#EF233C]">Top
+                        Deals</a>
+
+                    <a href="#"
+                        class="text-sm focus:text-[#EF233C] transition-colors duration-300 ease-in-out hover:text-[#EF233C]">Elements</a>
+                </div>
+
+                <div class="navbar-end gap-5">
+                    <div>
+                        <img class="w-5" src="Assets/imgi_126_default.png" alt="">
+                    </div>
+                    <button class="btn btn-ghost btn-circle">
+                        <p class="text-sm ">Hot Deals</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="container mx-auto px-5 py-3">
+            <div>
+                <div class="flex items-center justify-between gap-5">
+                    <h1 class="text-2xl font-bold">Forged Wheels</h1>
+                    <div class="flex items-center gap-3">
+                        <h1>Home</h1>
+                        <p>/</p>
+                        <h1>Wheels</h1>
+                        <p>/</p>
+                        <h1>Forged Wheels</h1>
+                    </div>
+                </div>
+
+                <div class="w-full flex flex-col lg:flex-row items-stretch justify-center gap-6">
+                    <!-- Left Sidebar -->
+                    <div class="flex flex-col">
+                        <div class="flex-1 max-w-xs">
+                            <ul class="list bg-base-100 rounded-box w-full shadow-md mt-4 border border-gray-300">
+                                <li class="p-4 pb-2 text-3xl font-bold">HOME</li>
+                                <li class="px-4">
+                                    <div class="flex items-center gap-2">
+                                        <div class="flex-1 border-b-2 border-red-500"></div>
+                                        <div class="flex-1 border-b border-gray-300"></div>
+                                    </div>
+                                </li>
+
+                                <li
+                                    class="flex items-center justify-between px-4 py-2 hover:bg-[#e63434] cursor-pointer transition rounded-md">
+                                    <span>Shop</span>
+                                    <button class="btn btn-square btn-ghost">
+                                        <i class="fa-solid fa-plus-minus"></i>
+                                    </button>
+                                </li>
+
+                                <li
+                                    class="flex items-center justify-between px-4 py-2 hover:bg-[#e63434] cursor-pointer transition rounded-md">
+                                    <span>Accessories</span>
+                                    <button class="btn btn-square btn-ghost">
+                                        <i class="fa-solid fa-plus-minus"></i>
+                                    </button>
+                                </li>
+
+                                <li
+                                    class="flex items-center justify-between px-4 py-2 hover:bg-[#e63434] cursor-pointer transition rounded-md">
+                                    <span>Auto Parts</span>
+                                    <button class="btn btn-square btn-ghost">
+                                        <i class="fa-solid fa-plus-minus"></i>
+                                    </button>
+                                </li>
+
+                                <li
+                                    class="flex items-center justify-between px-4 py-2 hover:bg-[#e63434] cursor-pointer transition rounded-md">
+                                    <span>Sensors</span>
+                                    <button class="btn btn-square btn-ghost">
+                                        <i class="fa-solid fa-plus-minus"></i>
+                                    </button>
+                                </li>
+
+                                <li
+                                    class="flex items-center justify-between px-4 py-2 hover:bg-[#e63434] cursor-pointer transition rounded-md">
+                                    <span>Wheels</span>
+                                    <button class="btn btn-square btn-ghost">
+                                        <i class="fa-solid fa-plus-minus"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flex-1 max-w-xs">
+                            <ul class="list bg-base-100 rounded-box w-full shadow-md mt-4 border border-gray-300">
+                                <li class="p-4 pb-2 text-3xl font-bold">Brand</li>
+                                <li class="px-4">
+                                    <div class="flex items-center gap-2">
+                                        <div class="flex-1 border-b-2 border-red-500"></div>
+                                        <div class="flex-1 border-b border-gray-300"></div>
+                                    </div>
+                                </li>
+
+                                <li
+                                    class="flex items-center  px-4 py-2 hover:bg-[#e63434] cursor-pointer transition rounded-md">
+                                    <button class="btn btn-square btn-ghost">
+                                        <i class="fa-regular fa-square-check"></i>
+                                    </button>
+                                    <span class="text-left">Cartify</span>
+
+                                </li>
+
+                                <li
+                                    class="flex items-center  px-4 py-2 hover:bg-[#e63434] cursor-pointer transition rounded-md">
+                                    <button class="btn btn-square btn-ghost">
+                                        <i class="fa-regular fa-square-check"></i>
+                                    </button>
+                                    <span>Ecomzone</span>
+
+                                </li>
+
+                                <li
+                                    class="flex items-center  px-4 py-2 hover:bg-[#e63434] cursor-pointer transition rounded-md">
+                                    <button class="btn btn-square btn-ghost">
+                                        <i class="fa-regular fa-square-check"></i>
+                                    </button>
+                                    <span>EcoShop</span>
+
+                                </li>
+
+                                <li
+                                    class="flex items-center  px-4 py-2 hover:bg-[#e63434] cursor-pointer transition rounded-md">
+                                    <button class="btn btn-square btn-ghost">
+                                        <i class="fa-regular fa-square-check"></i>
+                                    </button>
+                                    <span>MegaMart</span>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="flex-1 mt-3">
+                        <p class="text-gray-500 leading-relaxed mb-4">
+                            The braking system is essential for vehicle safety,
+                            allowing the driver to slow down, stop, or maintain control under various driving
+                            conditions. It includes brake pads, rotors, calipers, drums, master cylinders, and ABS
+                            modules. Each component plays a vital role in providing reliable stopping power and
+                            maintaining stability during braking.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row items-stretch justify-between gap-3">
+                            <!-- Left side -->
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-bars "></i>
+                                <h1 class="font-semibold">There are 14 products.</h1>
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex items-center gap-2">
+                                <h1 class="font-semibold">Sort-By:</h1>
+                                <select class="select select-primary select-sm">
+                                    <option disabled selected>Relevance</option>
+                                    <option>Price: Low to High</option>
+                                    <option>Price: High to Low</option>
+                                    <option>Newest</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="flex items-stretch gap-2">
+                            <div
+                                class="flex flex-col flex-1 bg-base-100 p-4 shadow-md rounded-md border border-gray-300">
+                                <div class="flex justify-center">
+                                    <img class="w-full h-48 object-contain"
+                                        src="Assets/imgi_165_pilot-automotive-universal-fit-black-with-red-trim.jpg"
+                                        alt="Shoes" />
+                                </div>
+                                <div class="mt-3 flex flex-col flex-1">
+                                    <p class="text-sm text-gray-500 mb-1">MegaMart</p>
+                                    <p class="text-sm mb-3 font-medium">Thrustmaster TH8S Shifter Add-On Mannual</p>
+                                    <p class="text-yellow-500">⭐⭐⭐⭐ <span class="text-gray-500">(4)</span></p>
+
+                                    <div class="flex items-center gap-2 mt-3">
+                                        <p class="line-through text-gray-500">$45.00</p>
+                                        <p class="text-orange-600 font-semibold">$40.00</p>
+                                    </div>
+
+                                    <div class="mt-auto">
+                                        <button
+                                            class="w-full px-3 py-2 border border-gray-300 transition-colors duration-500 ease-in-out hover:bg-[#EF233C] hover:text-white rounded-lg mt-4">
+                                            Add To Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex flex-col flex-1 bg-base-100 p-4 shadow-md rounded-md border border-gray-300">
+                                <div class="flex justify-center">
+                                    <img class="w-full h-48 object-contain"
+                                        src="Assets/imgi_165_pilot-automotive-universal-fit-black-with-red-trim.jpg"
+                                        alt="Shoes" />
+                                </div>
+                                <div class="mt-3 flex flex-col flex-1">
+                                    <p class="text-sm text-gray-500 mb-1">MegaMart</p>
+                                    <p class="text-sm mb-3 font-medium">Thrustmaster TH8S Shifter Add-On Mannual</p>
+                                    <p class="text-yellow-500">⭐⭐⭐⭐ <span class="text-gray-500">(4)</span></p>
+
+                                    <div class="flex items-center gap-2 mt-3">
+                                        <p class="line-through text-gray-500">$45.00</p>
+                                        <p class="text-orange-600 font-semibold">$40.00</p>
+                                    </div>
+
+                                    <div class="mt-auto">
+                                        <button
+                                            class="w-full px-3 py-2 border border-gray-300 transition-colors duration-500 ease-in-out hover:bg-[#EF233C] hover:text-white rounded-lg mt-4">
+                                            Add To Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex flex-col flex-1 bg-base-100 p-4 shadow-md rounded-md border border-gray-300">
+                                <div class="flex justify-center">
+                                    <img class="w-full h-48 object-contain"
+                                        src="Assets/imgi_165_pilot-automotive-universal-fit-black-with-red-trim.jpg"
+                                        alt="Shoes" />
+                                </div>
+                                <div class="mt-3 flex flex-col flex-1">
+                                    <p class="text-sm text-gray-500 mb-1">MegaMart</p>
+                                    <p class="text-sm mb-3 font-medium">Thrustmaster TH8S Shifter Add-On Mannual</p>
+                                    <p class="text-yellow-500">⭐⭐⭐⭐ <span class="text-gray-500">(4)</span></p>
+
+                                    <div class="flex items-center gap-2 mt-3">
+                                        <p class="line-through text-gray-500">$45.00</p>
+                                        <p class="text-orange-600 font-semibold">$40.00</p>
+                                    </div>
+
+                                    <div class="mt-auto">
+                                        <button
+                                            class="w-full px-3 py-2 border border-gray-300 transition-colors duration-500 ease-in-out hover:bg-[#EF233C] hover:text-white rounded-lg mt-4">
+                                            Add To Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container mx-auto px-5 py-3">
+
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                Suspension and steering components provide comfort, control, and stability while driving,
+                especially on uneven terrain or at high speeds. This subcategory features parts like shocks,
+                struts, control arms, sway bars, tie rods, and steering racks. Together, they absorb road impact,
+                maintain tire contact, and allow the driver to steer accurately. Properly functioning suspension
+                and steering systems are essential for ride quality, vehicle alignment, and safety.
+            </p>
+
+            <!-- Images Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <img src="Assets/imgi_81_insta-07.png"
+                        class="w-full h-64 object-cover rounded-lg shadow-md">
+                </div>
+                <div>
+                    <img src="Assets/imgi_78_insta-04.png" alt="Mechanic checking engine"
+                        class="w-full h-64 object-cover rounded-lg shadow-md">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bg-gray-900 mb-3">
+            <div class="container mx-auto px-4 md:px-10 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                    <div class="lg:col-span-1">
+                        <img src="Assets/imgi_7_logo-1753509866.png" alt="Ecobazar Logo"
+                            class="mb-4 w-auto h-8 bg-white px-2 rounded-lg">
+                        <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+                            Lorem ipsum dolor sit amet adipisicing elit. Beatae, cumque.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <a href="#" class="text-[#00B207] hover:text-[#009206] transition-colors">
+                                <i class="fa-brands fa-facebook text-xl"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fa-brands fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fa-brands fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fa-brands fa-pinterest text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="font-semibold text-white text-lg mb-4">My Account</h2>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">My
+                                    Account</a></li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Order
+                                    History</a></li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Shopping
+                                    Cart</a></li>
+                            <li><a href="#"
+                                    class="text-sm text-gray-400 hover:text-white transition-colors">Wishlist</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="font-semibold text-white text-lg mb-4">Help</h2>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a>
+                            </li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">FAQs</a>
+                            </li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Terms &
+                                    Conditions</a></li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Privacy
+                                    Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="font-semibold text-white text-lg mb-4">Proxy</h2>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">About</a>
+                            </li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Shop</a>
+                            </li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Product</a>
+                            </li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Track
+                                    Order</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="font-semibold text-white text-lg mb-4">Download Mobile App</h2>
+                        <div class="flex flex-col gap-3">
+                            <a href="#"
+                                class="flex items-center gap-3 p-2 border border-gray-700 rounded-lg hover:border-gray-600 transition-colors">
+                                <i class="fa-brands fa-apple text-white text-2xl"></i>
+                                <div>
+                                    <p class="text-gray-400 text-xs">Download on the</p>
+                                    <p class="text-white text-sm font-medium">App Store</p>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-3 p-2 border border-gray-700 rounded-lg hover:border-gray-600 transition-colors">
+                                <i class="fa-brands fa-google-play text-white text-2xl"></i>
+                                <div>
+                                    <p class="text-gray-400 text-xs">Download on the</p>
+                                    <p class="text-white text-sm font-medium">Google Play</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800">
+                <div class="container mx-auto px-4 md:px-10 py-6">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                        <p class="text-gray-500 text-sm">Ecobazar eCommerce © 2021. All Rights Reserved</p>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-brands fa-apple text-white text-xl"></i>
+                            <i class="fa-brands fa-cc-visa text-white text-xl"></i>
+                            <i class="fa-brands fa-cc-mastercard text-white text-xl"></i>
+                            <i class="fa-brands fa-cc-discover text-white text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
